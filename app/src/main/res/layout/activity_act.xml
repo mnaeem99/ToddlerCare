@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <EditText
+        android:id="@+id/personText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Enter baby name"
+        android:ems="10"
+        android:layout_marginBottom="@dimen/margin_10" />
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="83dp"
+        android:layout_height="32dp"
+        android:text="Gender"
+        android:textSize="18sp" />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="205dp"
+        android:layout_height="32dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="121dp"
+            android:layout_height="33dp"
+            android:onClick="radioButtonhandler"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="169dp"
+            android:layout_height="33dp"
+            android:onClick="radioButtonhandler"
+            android:text="Female" />
+    </RadioGroup>
+    <EditText
+        android:id="@+id/dobText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Date of Birth"
+        android:inputType="date"
+        android:layout_marginBottom="@dimen/margin_10" />
+    <EditText
+        android:id="@+id/phoneText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="Enter health issue"
+        android:layout_marginBottom="@dimen/margin_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:text="@string/add"
+            android:textColor="@color/colorBackground" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/edit"
+            android:textColor="@color/colorBackground" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="@string/delete"
+            android:textColor="@color/colorBackground" />
+
+    </LinearLayout>
+
+</LinearLayout>
