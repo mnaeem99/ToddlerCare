@@ -1,5 +1,6 @@
 package com.example.sqlite_project;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -143,7 +144,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             // Snack Bar to show success message that record saved successfully
             Snackbar.make(nestedScrollView, getString(R.string.success_message), Snackbar.LENGTH_LONG).show();
             emptyInputEditText();
-
+            Intent accountsIntent = new Intent(activity, BabyActivity.class);
+            startActivity(accountsIntent);
 
         } else {
             // Snack Bar to show error message that record already exists

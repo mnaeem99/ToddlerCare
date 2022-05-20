@@ -29,14 +29,14 @@
             android:id="@+id/radioButton"
             android:layout_width="121dp"
             android:layout_height="33dp"
-            android:onClick="radioButtonhandler"
+            android:onClick="onClick"
             android:text="Male" />
 
         <RadioButton
             android:id="@+id/female"
             android:layout_width="169dp"
             android:layout_height="33dp"
-            android:onClick="radioButtonhandler"
+            android:onClick="onClick"
             android:text="Female" />
     </RadioGroup>
     <EditText
@@ -44,7 +44,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Select Date of Birth"
-        android:inputType="date"
         android:layout_marginBottom="@dimen/margin_10" />
     <EditText
         android:id="@+id/phoneText"

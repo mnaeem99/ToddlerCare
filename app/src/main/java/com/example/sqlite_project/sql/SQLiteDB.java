@@ -60,8 +60,8 @@ public class SQLiteDB extends SQLiteOpenHelper {
         // Create a new map of values, where column names are the keys
         ContentValues values = new ContentValues();
         values.put(COLUMN_BABY_NAME, baby.getName());
-        values.put(COLUMN_BABY_GENDER, baby.getGender());
-        values.put(COLUMN_BABY_DOB, baby.getDob());
+        values.put(COLUMN_BABY_GENDER, "");
+        values.put(COLUMN_BABY_DOB, "");
         values.put(COLUMN_BABY_ISSUE, baby.getIssue());
 
         // Insert the new row, returning the primary key value of the new row
@@ -107,8 +107,8 @@ public class SQLiteDB extends SQLiteOpenHelper {
         // New value for one column
         ContentValues values = new ContentValues();
         values.put(COLUMN_BABY_NAME, baby.getName());
-        values.put(COLUMN_BABY_GENDER, baby.getGender());
-        values.put(COLUMN_BABY_DOB, baby.getDob());
+        values.put(COLUMN_BABY_GENDER, "");
+        values.put(COLUMN_BABY_DOB, "");
         values.put(COLUMN_BABY_ISSUE, baby.getIssue());
 
         // Which row to update, based on the ID
