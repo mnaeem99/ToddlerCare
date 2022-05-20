@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ProblemsActivity"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/colorPrimaryDark" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvBranchNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/app_name"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvBranchAddress"
+                    android:layout_marginTop="6dp"
+                    android:layout_below="@id/tvBranchNo"
+                    android:text="@string/text_title"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <ImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/logo" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackground">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="1. Respiratory syncytial virus"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv1"
+                    android:layout_marginTop="6dp"
+                    android:text="Respiratory syncytial virus (RSV) is the most common cause of respiratory infections in children. RSV causes an infection of the lungs and breathing passages.
+
+If your child has RSV, they will show symptoms similar to a cold including a runny nose, coughing and a fever. Most often, treatment will include rest at home and drinking small amounts of fluids regularly.
+
+You should see a doctor if your child has a high fever, if their nose is filled with mucus and they are having difficulty eating or drinking, or if they start coughing up mucus. If your child becomes dehydrated, it’s also important to take them to see a doctor.
+
+You’ll need to call an ambulance on 000 if they experience any of the  following symptoms:
+
+have trouble breathing
+start turning blue
+start breathing very quickly.
+It’s difficult to stop RSV spreading, and most children under the age of two have been infected by RSV at some point. Children with symptoms of RSV are likely to be sent home from school or early learning to prevent the spread and protect the health of other children. Practicing good hygiene is very important to reduce the risk of spreading RSV.
+
+It’s important to encourage thorough handwashing and to not allow children to share drinks, cutlery or toys. Your child should wash their hands each time they blow their nose to prevent the germs spreading.
+
+"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackground">
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="2. Ear infections"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv3"
+                    android:layout_marginTop="6dp"
+                    android:text="Ear infections are common in small children and often resolve on their own within a week or two. They can cause earache and temporary hearing loss. Middle ear infections and outer ear infections are common in children and are caused by either bacteria or viruses.
+
+How can you tell baby ear infection vs teething?
+In babies, the symptoms of ear infection can be mistaken for teething.
+
+Normal teething may cause sore gums, a mild temperature, and a rash. Baby may become fretful, dribble, or even pull or rub on their ear, but teething shouldn’t make your baby unwell.
+
+Ear infections, on the other hand, can cause a high temperature, fever, a cough, irritability and pulling or rubbing at an ear.
+
+You should take your child to see a doctor if your child seems to be in pain, if the symptoms don’t improve or if there is pus or fluid coming from their ear.
+
+The Royal Australia College of General Practitioners (RACGP) recommend  not using antibiotics to treat middle ear infections in non-indigenous children between the ages of 2-12 unless there are signs of the child being generally unwell.
+
+To reduce the risk of your child getting an ear infection, it’s important that you or your child never put anything into their ears, even if they feel blocked. They should not use ear drops unless they are prescribed by a doctor or recommended by a pharmacist.
+
+"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackground">
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="3. Gastroenteritis"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv5"
+                    android:layout_marginTop="6dp"
+                    android:text="Gastroenteritis (gastro) is a bowel infection that causes inflammation of the stomach and intestines. It leads to diarrhoea and sometimes vomiting. The vomiting may stop quickly, but the diarrhoea can last for up to 10 days. Gastroenteritis can be caused by many different germs, although the most common cause is a viral or bacterial infection.
+
+If your child has gastroenteritis, they may experience the following symptoms:
+
+nausea
+headaches
+vomiting in the first 24 to 48 hours
+no appetite
+stomach pains
+fever.
+Most children with gastroenteritis can be treated at home with the main treatment being lots of fluids. Babies under six months should always be seen by a doctor if they have gastro. Infectious diseases such as gastroenteritis can spread quickly in school communities, causing significant school health problems. Children should not return to school until 48 hours after the last episode of diarrhoea or vomiting.
+
+To prevent gastroenteritis, it’s important to wash your hands thoroughly after using the bathroom or changing nappies and before handling food.
+
+"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackground">
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="4. Roseola"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv7"
+                    android:layout_marginTop="6dp"
+                    android:text="Roseola Infantum is a viral infection that usually occurs in babies and children between six months and two years old. It causes a high fever.
+
+Symptoms of roseola in your child can include:
+
+a mild sore throat
+a sudden high fever
+swollen neck glands
+a rash of pink, raised spots on their chest, tummy and back.
+Consult a doctor immediately if your child develops a severe headache or a headache with a stiff neck, or if your child seems confused, extremely drowsy, or if the rash looks purple in places. This may be a sign of something more serious, such as meningitis.
+
+You can reduce the risk of contracting roseola by washing your hands regularly and practicing good hygiene. There isn’t a vaccine to prevent roseola.
+
+The most problematic issue that can arise from roseola is the risk of febrile convulsions.
+
+"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackground">
+
+                <TextView
+                    android:id="@+id/tv9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="5. Febrile convulsions"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv9"
+                    android:layout_marginTop="6dp"
+                    android:text="Febrile convulsions or seizures are triggered by fever. Symptoms of febrile convulsions include:
+
+stiffness or jerkiness
+eyes rolling backwards
+loss of consciousness
+several minutes of twitching or jerkiness in arms, legs or face
+loss of bladder and bowel control.
+The Royal Children’s Hospital in Melbourne (RCH) has a useful fact sheet on febrile convulsion.
+
+See a doctor as soon as possible if your child experiences a convulsion shorter than five minutes.
+
+If your child was very unwell before the seizure, if they have a convulsion that lasts longer than five minutes or won’t wake up after a convulsion, seek emergency medical assistance immediately by calling 000 and ask for an ambulance.
+
+"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackground">
+
+                <TextView
+                    android:id="@+id/tv11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="6. Conjunctivitis (pink eye)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv11"
+                    android:layout_marginTop="6dp"
+                    android:text="Conjunctivitis is a common eye infection in children. It’s highly contagious and can cause the following symptoms:
+
+inflammation of the eye
+redness of the clear membrane covering the white part of the eye and inner surface of the eyelids
+yellow or green discharge from the eye
+crusty eyelashes
+itching or burning eyes.
+You should take your child to see a doctor if the condition doesn’t improve within hours. If it’s a viral infection, it will improve without any treatment, but if it’s a bacterial infection, it will need treatment with antibiotic eye drops.
+
+If a child has conjunctivitis, it’s best that they try not to touch their eyes. They should also wash their hands regularly to reduce the risk of it spreading.
+
+"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackground">
+
+                <TextView
+                    android:id="@+id/tv13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="7. Asthma"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv13"
+                    android:layout_marginTop="6dp"
+                    android:text="Asthma is a common condition in Australia that affects the lungs. If your child has asthma, they may experience some of the following symptoms:
+
+wheezing sound when they breathe
+breathlessness
+tight chest
+coughing, especially at night and or in the early morning.
+If you think your child may have asthma, it’s important to see your doctor. They will take a medical history for your child and order some lung function tests. They can also recommend treatment options including preventative measures.
+
+Asthma isn’t preventable, but there are measures you and your child can take to help to reduce the symptoms. Triggers may include dust, exercise, house dust mites, pollen and pets.
+
+Avoiding triggers that result in an episode of asthma is an important part of treatment.
+
+"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackground">
+
+                <TextView
+                    android:id="@+id/tv16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="8. Hand, foot and mouth disease"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv16"
+                    android:layout_marginTop="6dp"
+                    android:text="Hand, foot and mouth disease is a viral condition that causes blisters on the hands, feet and mouth. It is not the same as foot and mouth disease that affects animals.
+
+Symptoms of hand, foot and mouth disease generally last around seven days and include:
+
+fever
+tiny blisters on the cheeks, gums and sides of the mouth
+tiny blisters on the hands, feet and nappy area
+a sore throat
+There is no treatment for the condition, but you should encourage your child to drink plenty of water, and rest as much as possible. You should also leave the blisters to dry naturally and not try to squeeze them.
+
+To reduce the risk of hand, foot and mouth disease, it’s important that your child regularly washes their hands thoroughly. You’ll also need to wash your hands if you touch any of their bodily fluids. Your child should also not share items such as cutlery and drinking cups. It’s best to keep your child home from school until the all the fluid in their blisters dry."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackground">
+
+                <TextView
+                    android:id="@+id/tv17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="9. Threadworm or pinworm"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv17"
+                    android:layout_marginTop="6dp"
+                    android:text="Threadworm, or pinworm infection is a highly contagious condition that mainly affects children. Most commonly, children get infected when they get threadworm eggs on their hands and put their hands in their mouths. These eggs then travel to the intestines and grow into worms.
+
+The main symptoms that your child may experience if they have a threadworm infestation are:
+
+anal itching
+worms in their underwear
+redness and itching around the vagina in girls.
+Your child will need medicine to get rid of the threadworms. This is available from your doctor or pharmacist. It’s important that the whole family is treated at the same time as the condition is highly contagious.
+
+"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
