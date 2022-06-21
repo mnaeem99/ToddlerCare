@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/mainbg"
     android:layout_height="wrap_content"
     tools:context=".HomeActivity"
     >
@@ -14,35 +15,39 @@
             android:layout_height="250dp"
             android:background="@color/colorPrimaryDark"
             />
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/mainbg"
+            android:orientation="vertical">
 
             <RelativeLayout
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp">
 
                 <TextView
                     android:id="@+id/tvBranchNo"
-                    android:layout_width="wrap_content"
+                    android:layout_width="204dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:gravity="center"
                     android:text="@string/app_name"
                     android:textColor="#FFFFFF"
-                    android:textSize="22sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
-                <TextView
+                <Button
                     android:id="@+id/tvBranchAddress"
-                    android:layout_width="wrap_content"
+                    android:layout_width="206dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/tvBranchNo"
-                    android:layout_marginTop="6dp"
-                    android:text="@string/text_title"
+                    android:layout_marginTop="7dp"
+                    android:backgroundTint="#281040"
+                    android:text="@string/result"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp" />
 
@@ -56,33 +61,33 @@
             </RelativeLayout>
 
             <GridLayout
-                android:columnCount="2"
-                android:rowCount="3"
-                android:alignmentMode="alignMargins"
-                android:columnOrderPreserved="false"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:rowCount="3">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    app:cardElevation="6dp"
+                    android:layout_margin="12dp"
                     app:cardCornerRadius="12dp"
-                    android:layout_margin="12dp">
+                    app:cardElevation="6dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:padding="16dp"
                         android:gravity="center"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:padding="16dp">
 
                         <ImageView
                             android:id="@+id/ivProduct"
-                            android:src="@drawable/baby"
                             android:layout_width="80dp"
-                            android:layout_height="80dp"/>
+                            android:layout_height="80dp"
+                            android:src="@drawable/baby" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -100,22 +105,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    app:cardElevation="6dp"
+                    android:layout_margin="12dp"
                     app:cardCornerRadius="12dp"
-                    android:layout_margin="12dp">
+                    app:cardElevation="6dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:padding="16dp"
                         android:gravity="center"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:padding="16dp">
 
                         <ImageView
                             android:id="@+id/ivCategory"
-                            android:src="@drawable/problem"
                             android:layout_width="80dp"
-                            android:layout_height="80dp"/>
+                            android:layout_height="80dp"
+                            android:src="@drawable/problem" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -133,22 +138,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    app:cardElevation="6dp"
+                    android:layout_margin="12dp"
                     app:cardCornerRadius="12dp"
-                    android:layout_margin="12dp">
+                    app:cardElevation="6dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:padding="16dp"
                         android:gravity="center"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:padding="16dp">
 
                         <ImageView
                             android:id="@+id/ivCustomer"
-                            android:src="@drawable/profile"
                             android:layout_width="80dp"
-                            android:layout_height="80dp"/>
+                            android:layout_height="80dp"
+                            android:src="@drawable/profile" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -166,22 +171,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    app:cardElevation="6dp"
+                    android:layout_margin="12dp"
                     app:cardCornerRadius="12dp"
-                    android:layout_margin="12dp">
+                    app:cardElevation="6dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:padding="16dp"
                         android:gravity="center"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:padding="16dp">
 
                         <ImageView
                             android:id="@+id/ivPurchase"
-                            android:src="@drawable/setting"
                             android:layout_width="80dp"
-                            android:layout_height="80dp"/>
+                            android:layout_height="80dp"
+                            android:src="@drawable/setting" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -199,22 +204,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    app:cardElevation="6dp"
+                    android:layout_margin="12dp"
                     app:cardCornerRadius="12dp"
-                    android:layout_margin="12dp">
+                    app:cardElevation="6dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:padding="16dp"
                         android:gravity="center"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:padding="16dp">
 
                         <ImageView
                             android:id="@+id/ivBilling"
-                            android:src="@drawable/share"
                             android:layout_width="80dp"
-                            android:layout_height="80dp"/>
+                            android:layout_height="80dp"
+                            android:src="@drawable/share" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -232,22 +237,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    app:cardElevation="6dp"
+                    android:layout_margin="12dp"
                     app:cardCornerRadius="12dp"
-                    android:layout_margin="12dp">
+                    app:cardElevation="6dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:padding="16dp"
                         android:gravity="center"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:padding="16dp">
 
                         <ImageView
                             android:id="@+id/ivReports"
-                            android:src="@drawable/signout"
                             android:layout_width="80dp"
-                            android:layout_height="80dp"/>
+                            android:layout_height="80dp"
+                            android:src="@drawable/signout" />
 
                         <TextView
                             android:layout_width="wrap_content"

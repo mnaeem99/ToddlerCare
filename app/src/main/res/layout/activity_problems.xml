@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/mainbg"
     android:layout_height="wrap_content"
     tools:context=".ProblemsActivity"
     >
@@ -14,17 +15,19 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:background="@color/colorPrimaryDark" />
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/mainbg"
+            android:orientation="vertical">
 
             <RelativeLayout
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp">
 
                 <TextView
                     android:id="@+id/tvBranchNo"
@@ -35,16 +38,16 @@
                     android:textColor="#FFFFFF"
                     android:textSize="22sp"
                     android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/tvBranchAddress"
-                    android:layout_marginTop="6dp"
-                    android:layout_below="@id/tvBranchNo"
-                    android:text="@string/text_title"
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    />
+                    android:layout_below="@id/tvBranchNo"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/text_title"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
 
                 <ImageView
                     android:id="@+id/ivProfile"
@@ -54,12 +57,13 @@
                     android:src="@drawable/logo" />
 
             </RelativeLayout>
+
             <RelativeLayout
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
                 android:background="@color/colorBackground">
 
                 <TextView
@@ -97,12 +101,13 @@ It’s important to encourage thorough handwashing and to not allow children to 
                     android:textColor="#FFFFFF"
                     android:textSize="14sp" />
             </RelativeLayout>
+
             <RelativeLayout
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
                 android:background="@color/colorBackground">
 
                 <TextView
@@ -142,11 +147,11 @@ To reduce the risk of your child getting an ear infection, it’s important that
             </RelativeLayout>
 
             <RelativeLayout
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
                 android:background="@color/colorBackground">
 
                 <TextView
@@ -183,12 +188,13 @@ To prevent gastroenteritis, it’s important to wash your hands thoroughly after
                     android:textColor="#FFFFFF"
                     android:textSize="14sp" />
             </RelativeLayout>
+
             <RelativeLayout
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
                 android:background="@color/colorBackground">
 
                 <TextView
@@ -225,12 +231,13 @@ The most problematic issue that can arise from roseola is the risk of febrile co
                     android:textColor="#FFFFFF"
                     android:textSize="14sp" />
             </RelativeLayout>
+
             <RelativeLayout
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
                 android:background="@color/colorBackground">
 
                 <TextView
@@ -266,12 +273,13 @@ If your child was very unwell before the seizure, if they have a convulsion that
                     android:textColor="#FFFFFF"
                     android:textSize="14sp" />
             </RelativeLayout>
+
             <RelativeLayout
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
                 android:background="@color/colorBackground">
 
                 <TextView
@@ -305,12 +313,13 @@ If a child has conjunctivitis, it’s best that they try not to touch their eyes
                     android:textColor="#FFFFFF"
                     android:textSize="14sp" />
             </RelativeLayout>
+
             <RelativeLayout
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
                 android:background="@color/colorBackground">
 
                 <TextView
@@ -345,12 +354,13 @@ Avoiding triggers that result in an episode of asthma is an important part of tr
                     android:textColor="#FFFFFF"
                     android:textSize="14sp" />
             </RelativeLayout>
+
             <RelativeLayout
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
                 android:background="@color/colorBackground">
 
                 <TextView
@@ -383,12 +393,13 @@ To reduce the risk of hand, foot and mouth disease, it’s important that your c
                     android:textColor="#FFFFFF"
                     android:textSize="14sp" />
             </RelativeLayout>
+
             <RelativeLayout
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
                 android:background="@color/colorBackground">
 
                 <TextView

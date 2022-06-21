@@ -3,12 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/mainbg"
     android:layout_height="match_parent"
     tools:context=".ProfileActivity">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/UpdateButtonID"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
@@ -34,7 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:text="SetUp your Profile First"
+                android:text="Set Up your Profile First"
                 android:textColor="@android:color/white"
                 android:textSize="20sp" />
 
@@ -111,6 +112,7 @@
                     android:layout_below="@id/picturelayout"
                     android:layout_marginTop="50dp">
 
+
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/UsernameID"
                         android:layout_width="match_parent"
@@ -118,13 +120,12 @@
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-
-                            android:backgroundTint="@color/colorPrimary"
-                            android:hint="Enter Your Name"
+                            android:layout_height="match_parent"
+                            android:hint="@string/hint_Enter_name"
                             android:padding="10dp"
-                            android:textColorHighlight="@color/colorPrimary"
-                            android:textColorHint="@color/colorPrimary">
+                            android:textAlignment="center"
+                            android:visibility="visible"
+                            tools:ignore="@string/hint_Enter_name">
 
                         </com.google.android.material.textfield.TextInputEditText>
 
@@ -148,16 +149,18 @@
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Enter Phone Number"
+                            android:hint="@string/hint_Enter_Phone"
                             android:inputType="number"
                             android:padding="10dp"
-                            android:singleLine="true">
+                            android:singleLine="true"
+                            android:textAlignment="center">
 
                         </com.google.android.material.textfield.TextInputEditText>
 
                     </com.google.android.material.textfield.TextInputLayout>
 
                 </RelativeLayout>
+
                 <RelativeLayout
                     android:id="@+id/emaillayout"
                     android:layout_width="match_parent"
@@ -173,10 +176,11 @@
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Enter Your Email"
+                            android:hint="@string/hint_Enter_Email"
                             android:inputType="textEmailAddress"
                             android:padding="10dp"
-                            android:singleLine="true">
+                            android:singleLine="true"
+                            android:textAlignment="center">
 
                         </com.google.android.material.textfield.TextInputEditText>
 

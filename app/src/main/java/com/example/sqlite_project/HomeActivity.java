@@ -2,14 +2,18 @@ package com.example.sqlite_project;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
+import de.hdodenhof.circleimageview.BuildConfig;
+
 
 public class HomeActivity extends AppCompatActivity {
     ImageView ivProfile, ivProduct, ivCategory, ivStock, ivCustomer, ivReports, ivBilling;
-    TextView tvBranchNo, tvBranchAddress;
+    TextView tvBranchNo;
+    Button tvBranchAddress;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +27,9 @@ public class HomeActivity extends AppCompatActivity {
         ivBilling= findViewById(R.id.ivBilling);
         tvBranchNo= findViewById(R.id.tvBranchNo);
         tvBranchAddress= findViewById(R.id.tvBranchAddress);
-
+        Intent intent = getIntent();
+        String email = intent.getStringExtra("EMAIL");
+        System.out.println(email);
         ivProduct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,13 +47,17 @@ public class HomeActivity extends AppCompatActivity {
         ivStock.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this, ProfileActivity.class));
+                Intent accountsIntent = new Intent(HomeActivity.this, ProfileActivity.class);
+                accountsIntent.putExtra("EMAIL1", email);
+                startActivity(accountsIntent);
             }
         });
         ivCustomer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this, ProfileActivity.class));
+                Intent accountsIntent = new Intent(HomeActivity.this, ProfileActivity.class);
+                accountsIntent.putExtra("EMAIL1", email);
+                startActivity(accountsIntent);
             }
         });
         ivBilling.setOnClickListener(new View.OnClickListener() {
@@ -55,7 +65,7 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain");
-                String  shareMessage = "https://play.google.com/store/apps/details?id="+BuildConfig.APPLICATION_ID +"\n\n";
+                String  shareMessage = "https://play.google.com/store/apps/details?id="+ BuildConfig.APPLICATION_ID +"\n\n";
                 String sharebody = shareMessage;
                 String sharesubject = "Hey"+"\n\n"+sharebody+"\n";
                 intent.putExtra(Intent.EXTRA_TEXT, sharesubject);
@@ -67,6 +77,14 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this, MainActivity.class));
             }
+        });
+        tvBranchAddress.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(HomeActivity.this , Results.class);
+                startActivity(intent);
+            }
+
         });
     }
 }

@@ -1,5 +1,6 @@
 package com.example.sqlite_project.sql;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -85,6 +86,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
      *
      * @return list
      */
+    @SuppressLint("Range")
     public List<User> getAllUser() {
         // array of columns to fetch
         String[] columns = {
